@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management Pro - Professional Hospitality Management</title>
+    <meta name="description" content="Professional hotel management system with booking, guest, and room management">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-icon">🏨</span>
+                Hotel Management System
+            </div>
+            <ul class="nav-links">
+                <li><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+                <li><a href="#guests" class="nav-link">Guests</a></li>
+                <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                <li><a href="#bookings" class="nav-link">Bookings</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-sm" onclick="refreshData()">
+                    <span>🔄</span> Refresh
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="main-content">
+            <!-- Content will be loaded here -->
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading Hotel Management System...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modals will be dynamically inserted here -->
+    <div id="modal-container"></div>
+
+    <script src="/static/js/utils.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+
+</html>
